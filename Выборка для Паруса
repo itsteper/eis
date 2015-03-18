@@ -1,0 +1,26 @@
+SELECT
+	csa.ID_ACCOUNT,
+	csa.account_number,
+	/* префикс счета сюда*/
+	csa.account_date,
+	csa.id_payer, /* распарсить в код страховой */
+	csa.tariff_month,
+	csa.total_summ,
+	/* сумма отказа сюда */
+	csa.REMARK,
+	csa.CONFIRM_DATE,
+	csa.MIC_DATE,
+	csa.IS_ADD_PAY,
+	csa.ID_PARENT_account,
+	csa.id_fin_type,
+	/* дата выполнения платежа сюда */,
+	/* номер платежки сюда */,
+	/* дата платежки сюда */,
+	/* статус сюда */,
+FROM
+	case_services_accounts@eisstac csa
+	/* smo@eisstac smo,
+	vmu_acc_status@eisstac vas,
+	pay_sheets@eisstac ps,
+	pay_summs@eisstac psu,
+	refuses@eisstac r, */ 
