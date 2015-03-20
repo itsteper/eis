@@ -1,7 +1,7 @@
 SELECT
 	csa.ID_ACCOUNT,
 	csa.account_number,
-	/* префикс счета сюда*/
+	/* префикс счета сюда (в душе не ебу что это) */
 	csa.account_date,
 	csa.id_payer, /* распарсить в код страховой */
 	csa.tariff_month,
