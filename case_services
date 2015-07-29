@@ -1,0 +1,6 @@
+select id_case, vmu_profile.profile_infis_code from case_services, vmu_profile
+where
+vmu_profile.id_profile = case_services.id_profile
+AND vmu_profile.profile_infis_code like 'вНК%'
+
+/*Проверяем наличие во всех случаях и услугах указанного после like профиля. Название берем из vmu_profile.profile_infis_code */
